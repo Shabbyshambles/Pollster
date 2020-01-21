@@ -1,0 +1,139 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <style>body {
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(178, 190, 245, 0.87);
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    </style>
+</head>
+<body style ="background-color:rgba(178, 218, 245, 0.925)">
+       <!-- Side navigation -->
+<div class="sidenav">
+    <form>
+        <Legend>Friends</Legend>
+        <p>
+         Jesus Jesus Jesus Jesus
+        </p>
+        <p>
+         Eleanor Horgensbagath
+        </p>
+        <p>
+            Oswald Von Tibbedozer
+        </p>
+        <p>
+            Tippy Enklehorn
+        </p>
+    </form>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    
+    <a href="#">Contact</a>
+  </div>
+  
+  <!-- Page content -->
+  <div class="main">
+   
+    <h1>Pollster</h1>
+<!--defining a form which requests url 2 upon hitting submit-->
+    <form border-radius = "15px"  action="/4" id="form1" method="post">
+        <fieldset
+        border-radius="5px"style="background-color: rgba(241, 241, 86, 0.89);">
+            <legend><h3>Submit</h3></legend>
+            <p>
+                <label>Poll:</label><br>
+                <textarea name = "mytextarea"
+                    rows = "5"
+                    cols = "100"
+                    border-radius ="5px">"your text here"
+                </textarea> <br>
+                <label>Choice 1:</label>
+                
+
+                <input border-radius="3px"
+                type = "text"
+                name = "mychoice1"
+                value = "burritos" /><br>
+        
+                <label>Choice 2:</label>
+                <input border-radius="3px"
+                type = "text"
+                name = "mychoice2"
+                value = "enchiladas" />
+            </p>
+                
+                <input type = "submit" value = "submit">
+                
+        </fieldset
+        >
+        <br>
+        <fieldset style="background-color: rgba(241, 241, 86, 0.89);">
+            
+            <Legend><h3>News Feed</h3></Legend>
+            <fieldset
+            border-radius="5px">
+                <legend><h3>Jane Doe</h3></legend>
+            <h2>CHATTER<br>CHATTERCHATTER<br>CHAT?</h2>
+
+            <input type="radio" value="blahblahblah">blah<br>
+            <input type="radio" value="uwuwuuwuwuwu">uwu <br>
+            </fieldset
+            >
+            <br>
+            <fieldset
+            border-radius="5px"style="background-color: rgba(241, 241, 86, 0.89);">
+                <legend><h3>Monty Python</h3></legend>
+                <h2>What is the average speed of a swallow</h2><br>
+                <input type="radio" value="Swallow1">African<br>
+                <input type="radio" value = "Swallow2">European<br>
+                </fieldset
+                >
+
+            </fieldsetstyle="background-color: rgba(241, 241, 86, 0.89);">
+        </fieldset>
+       
+        
+    </form>
+ </div>
+    
+</body>
+</html>
