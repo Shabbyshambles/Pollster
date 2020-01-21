@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>body {
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(178, 190, 245, 0.87);
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    </style>
+</head>
+<body style="background-color: rgba(178,218,245,0.925);">
+    <div class="sidenav"><form>
+        <Legend>Friends</Legend>
+        <p>
+         Jesus Jesus Jesus Jesus
+        </p>
+        <p>
+         Eleanor Horgensbagath
+        </p>
+        <p>
+            Oswald Von Tibbedozer
+        </p>
+        <p>
+            Tippy Enklehorn
+        </p>
+    </form>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class = "main">
+    <h1>Pollster</h1>
+    
+    <fieldset style="background-color:rgba(241,241,86,0.89)">
+        <legend><h1>Poll:</h1></legend>
+        <label><h2>{{text}}</h2></label><br>
+        <input type = "radio" name = "choice1" value = "burritos">{{name1}}<br>
+        <input type = "radio" name = "choice2" value = "enchiladas">{{name2}}
+        <form action = "/3" method = "post">
+        <input type = "submit" Value = "submit">
+        </form>
+    </fieldset>
+  </div>
+  
+</body>
+</html>
